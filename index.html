@@ -3,7 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bolai's Music</title>
+  <title>Bolai Fang | Bolai's Music</title>
+  <meta name="description" content="Bolai Fang is a composer, sound designer, and music producer creating music for games, film, orchestral media, and electronic sound worlds." />
+  <meta name="keywords" content="Bolai Fang, Bolai's Music, composer, game music, film scoring, sound design, music for new media, Peabody Institute" />
+  <meta name="author" content="Bolai Fang" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Bolai Fang | Bolai's Music" />
+  <meta property="og:description" content="Music portfolio of Bolai Fang, featuring game audio, film scoring, orchestral writing, and electronic music." />
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Bolai Fang",
+    "alternateName": "方博来",
+    "jobTitle": "Composer and Sound Designer",
+    "url": "",
+    "sameAs": [
+      "https://play.reelcrafter.com/29vZn94-TOKo0PbcLi4vtQ"
+    ]
+  }
+  </script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -539,7 +559,7 @@
     <div class="hero-content">
       <div class="eyebrow">Music / Sound / Interaction</div>
       <h1>Bolai's<br>Music</h1>
-      <div class="subtitle">Game audio, film scoring, orchestral writing, and electronic music</div>
+      <div class="subtitle">Bolai Fang · Game audio, film scoring, orchestral writing, and electronic music</div>
     </div>
     <button class="scroll-cue" id="scrollToMusic">Scroll / Click to Enter Works</button>
   </section>
@@ -642,6 +662,16 @@
   </section>
 
   <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+
+    window.addEventListener('load', () => {
+      if (!window.location.hash) {
+        window.scrollTo(0, 0);
+      }
+    });
+
     const scrollButton = document.getElementById('scrollToMusic');
     const musicSection = document.getElementById('music-section');
 
